@@ -1,0 +1,33 @@
+the project is this:
+make a fully functioning "corporate" website
+
+this will include:
+- roles (custom is great, but storebought will do)
+    - all the registering and logging in/out nonsense too
+    - AND permissions
+- places to enter data
+    - to show up on charts and tables, mostly
+        - CHARTS NEED COLOR-
+- css for a fake website, go nuts
+- pug/mixins for all purposes
+    - previous projects should give an idea as what should be a mixin
+- JAVASCRIPT
+    - actually try to comprehend what the heck goes on in there
+- tables to store data and ALL that entails
+    - yes, that includes linking everything up
+
+tools to help are:
+- any past project
+    - it's not plagiarism if you're stealing from yourself-
+    - in all seriousness, you can pull from the more recent projects
+- the web
+    - like, seriously, just look things up, it's not that hard
+
+to-do:
+[] follow 6.3 (User Roles)
+[] figure out finer details
+[]
+[]
+[]
+
+- you got this :D
