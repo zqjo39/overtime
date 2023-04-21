@@ -16,6 +16,13 @@ this will include:
 - tables to store data and ALL that entails
     - yes, that includes linking everything up
 
+effectively, just combine:
+- user roles (6.3) (this will be the base for , as well as general project tone)
+- employee manager (5.1) (CEO will have access to this, find out how to order from most to least powerful role, then last name a-z)
+- bookstore (5.4) (just for the user page, for personal info and stuff for the CEO/admin to access)
+- colorpicker (3.2) (& all of unit one, it's all charts) (for creating charts for possible presentations)
+- blog (6.4) (chatroom for all employees, just articles from CEO/admin and commenting for everyone else (no replies?))???
+
 tools to help are:
 - any past project
     - it's not plagiarism if you're stealing from yourself-
