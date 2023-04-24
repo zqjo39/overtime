@@ -1,0 +1,58 @@
+extends ../layout
+
+block content
+
+    div.content
+        div.form-header Register
+        div
+            form(action = '/register' method = 'POST')
+                div.input-form-row
+                    div.input-container
+                        label(for = 'first_name').form-label First Name:
+                        input(name = 'first_name' id = 'first_name').form-control
+                    div.input-container
+                        label(for = 'last_name').form-label Last Name:
+                        input(name = 'last_name' id = 'last_name').form-control
+                div.input-container
+                    label(for = 'date_of_birth').form-label Date of Birth:
+                    input(type = 'date' name = 'date_of_birth' id = 'date_of_birth').form-control
+                div.input-container
+                    label(for = 'phone_number').form-label Phone Number:
+                    input(name = 'phone_number' id = 'phone_number').form-control
+                div.input-form-row
+                    div.input-container.wide
+                        label(for = 'email').form-label Email Address:
+                        input(name = 'email' id = 'email').form-control
+                        div.helper-text This is how you will log in.
+                    div.input-container
+                        label(for = 'password').form-label Password:
+                        input(type = 'password' name = 'password' id = 'password').form-control
+                        div.helper-text Must be 8-20 characters long.
+                div.input-form-row
+                    div.input-container.wide
+                        label(for = "address_line_one").form-label Address Line One:
+                        input(name = "address_line_one" id = "address_line_one").form-control
+                    div.input-container.wide
+                        label(for = "address_line_two").form-label Address Line Two:
+                        input(name = "address_line_two" id = "address_line_two").form-control
+                div.input-form-row
+                    div.input-container
+                        label(for = "city").form-label City:
+                        input(name = "city" id = "city")
+                    div.input-container
+                        label(for = "state").form-label State:
+                        select(name = "state" id = "state").form-control
+                            // put in options of all states later
+                    div.input-container
+                        label(for = "zip").form-label Zip Code:
+                        input(name = "zip" id = "zip").form-control
+                // find a way to hide this later; can't have entry level employees becoming ceos after all
+                    // moreover, find a way for ceo/admin to promote employees
+                div.input-container
+                    label().form-label Role:
+                    select()
+                        each role in roles
+                            option(value = role.id) #{role.name}
+                button.button.primary(type = 'submit') Register
+
+
