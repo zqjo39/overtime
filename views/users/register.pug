@@ -30,11 +30,11 @@ block content
                         div.helper-text Must be 8-20 characters long.
                 div.input-form-row
                     div.input-container.wide
-                        label(for = "address_line_one").form-label Address Line One:
-                        input(name = "address_line_one" id = "address_line_one").form-control
+                        label(for = "address_one").form-label Address Line One:
+                        input(name = "address_one" id = "address_one").form-control
                     div.input-container.wide
-                        label(for = "address_line_two").form-label Address Line Two:
-                        input(name = "address_line_two" id = "address_line_two").form-control
+                        label(for = "address_two").form-label Address Line Two:
+                        input(name = "address_two" id = "address_two").form-control
                 div.input-form-row
                     div.input-container
                         label(for = "city").form-label City:
@@ -53,6 +53,9 @@ block content
                     select()
                         each role in roles
                             option(value = role.id) #{role.name}
+
+                    div.helper-text
+                        a(href = '/login') Already have an account?
                 button.button.primary(type = 'submit') Register
 
 

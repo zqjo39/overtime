@@ -31,10 +31,12 @@ tools to help are:
     - like, seriously, just look things up, it's not that hard
 
 to-do:
-[] follow 6.3 (User Roles)
-[] figure out finer details
-[]
-[]
-[]
+[*] follow 6.3 (User Roles)
+[*] figure out finer details
+[] test register function
+[] refine dashboard (add charts/ability to make charts)
+[] remove role additions (register.pug)
+[] find out how to get ceo/admin to promote/demote employees
+[] add employee user pages
 
 - you got this :D
