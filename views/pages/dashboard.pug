@@ -3,5 +3,28 @@ extends ../layout
 block content
     div.content
         h1 Dashboard
-        p Welcome to the Dashboard
-        p Everyone can see and access this page
+        p Welcome to the Dashboard!
+        div
+            canvas(id = 'test1')
+
+        script(src = 'https://cdn.jsdelivr.net/npm/chart.js')
+        script.
+            var ctx = document.getElementById('test1');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                        }
+                    }
+                }
+            });

@@ -3,4 +3,31 @@ extends ../layout
 block content
     div.content
         h1 HR
-        p Welcome to Human Resources
+        p Welcome to Human Resources!
+        table
+            thead
+                th First
+                th Last
+                th Date of Birth
+                th Title
+                th Address
+                th Number
+                th Year Hired
+                //th Actions
+            tbody
+            each user in users
+                tr
+                    td= user.first_name
+                    td= user.last_name
+                    td= user.dob
+                    td= user.role.name
+                    td
+                        div #{user.address_one}
+                        div #{user.address_two}
+                        div= `${user.city}, ${user.state} ${user.zip}`
+                    td= user.phone_number
+                    td= user.year_hired
+                    td
+                        //div.actions
+                        //    a(href = `/update/${user.id}`) Edit
+                        //    a(href = `/delete/${user.id}`) Delete
