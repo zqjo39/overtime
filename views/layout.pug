@@ -27,7 +27,7 @@ html
               li.nav-item
                 a.nav-link(href="/hr") HR
             li.nav.item
-              a.nav-link(href="/profile") Profile
+              a.nav-link(href=`/profile/${user.id}`) Profile
             li.nav-item
               a.nav-link(href="/logout") Logout
           else

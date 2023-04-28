@@ -20,7 +20,8 @@ block content
                     td= user.first_name
                     td= user.last_name
                     td= user.dob
-                    td= user.role.name
+                    td= user.role_id
+                    // todo let's put a peen (pin) in this; relations are being weird and name is just not appearing
                     td
                         div #{user.address_one}
                         div #{user.address_two}
@@ -28,6 +29,7 @@ block content
                     td= user.phone_number
                     td= user.year_hired
                     td
-                        //div.actions
+                        div.actions
+                            a(href = `/profile/${user.id}`) View Profile
                         //    a(href = `/update/${user.id}`) Edit
                         //    a(href = `/delete/${user.id}`) Delete

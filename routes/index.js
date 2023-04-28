@@ -9,7 +9,7 @@ router.get('/accounting', redirectGuests, pageController.renderAccounting);
 router.get('/marketing', redirectGuests, pageController.renderMarketing);
 router.get('/sales', redirectGuests, pageController.renderSales);
 router.get('/hr', redirectGuests, pageController.renderHR);
-router.get('/profile', redirectGuests, pageController.viewProfile);
+router.get('/profile/:id', redirectGuests, pageController.viewProfile);
 
 router.get('/register', userController.renderRegistrationForm);
 router.post('/register', userController.registerUser);

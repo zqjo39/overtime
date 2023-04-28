@@ -42,6 +42,8 @@ module.exports.renderSales = function(req, res){
     res.render('pages/sales');
 };
 
-module.exports.viewProfile = function(req, res) {
-    res.render('pages/profile');
+module.exports.viewProfile = async function(req, res) {
+    const user = await User.findByPk(req.params.id);
+    console.log(user);
+    res.render(`pages/profile`, {user});
 };
